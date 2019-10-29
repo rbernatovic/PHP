@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>Aš valdau HTML!</title>
+        <title>As ir PHP</title>
     </head>
     <body>
-        <h1>Rafal - HTML asas</h1>
-        <p><?php print date('Y-m-d H:i:s')?></p>
+        <h1>Rafal - HTML <?php 'ir PHP'; ?> asas jau nuo <?php print date('Y'); ?> metu </h1>
+        <p> Viskas prasidejo <?php print date('M');?> menesio <?php print date('d'); ?> diena!<p>
     </body>
 </html>
