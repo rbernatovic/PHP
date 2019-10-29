@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>As ir PHP</title>
+        <title>PHP lydes ir <?php print date('Y:m:d', strtotime ("+1 day"))?>;</title>
     </head>
     <body>
-        <h1>Rafal - HTML <?php 'ir PHP'; ?> asas jau nuo <?php print date('Y'); ?> metu </h1>
-        <p> Viskas prasidejo <?php print date('M');?> menesio <?php print date('d'); ?> diena!<p>
+        <h1><b>Rafal</b> - PHP su manim buvo ir <?php print date ('Y:m:d h:i:s', strtotime ("-1 hour"))?></h1>
+        <p><?php print date('Y', strtotime ("+1year"))?> ne uz kalnu!</p>
     </body>
 </html>
