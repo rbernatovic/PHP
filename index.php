@@ -4,6 +4,6 @@
     </head>
     <body>
         <h1>Rafal - HTML asas</h1>
-        <p>Moku kurti statinį turinį</p>
+        <p><?php print date('Y-m-d H:i:s')?></p>
     </body>
 </html>
