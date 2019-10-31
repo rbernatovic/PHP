@@ -1,19 +1,19 @@
+<?php
+        $tekstas = 'random tekstas';
+        $x = 10;
+        $taip = true;
+        $nieko = null;
+?>
 <html>
     <head>
-        <title>bomba</title>
-        <style>
-            img {
-              
-               width: 1<?php print date('s')?>;
-               height: 1<?php print date('s')?>;
-            }
-            
-        </style>
+        <title>list</title>
     </head>
     <body>
-        <div class="flex">
-        <img src="assets\images\bomb.png">
-        <p><?php print date('s')?></p>
-        </div>
+        <ul>
+            <li><?php print $tekstas?></li>
+            <li><?php print $x?></li>
+            <li><?php print $taip?></li>
+            <li><?php print $nieko?></li>
+        </ul>
     </body>
 </html>
