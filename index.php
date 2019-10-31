@@ -1,19 +1,22 @@
 <?php
-        $tekstas = 'random tekstas';
-        $x = 10;
-        $taip = true;
-        $nieko = null;
+     $paskola = (rand (1,100)); 
+     $neveluoju = (rand (101,200)); 
+     $veluoju = (rand (201,300)); 
+     $skola = "Skolos skaiciuokle:";
+     $jei_paemei = "Jei paemei $paskola";
+     $du = "Su dviem kabanciais grazinsi $neveluoju";
+     $vienas = "Su vienu kabanciu  grazinsi $veluoju";
 ?>
 <html>
     <head>
-        <title>list</title>
+        <title>skolos skaiciuokle</title>
     </head>
     <body>
-        <ul>
-            <li><?php print $tekstas?></li>
-            <li><?php print $x?></li>
-            <li><?php print $taip?></li>
-            <li><?php print $nieko?></li>
-        </ul>
+        <div>
+            <h1><?php print $skola?></h1>
+            <h3><?php print $jei_paemei?></h3>
+            <h3><?php print $du?></h3>
+            <h3><?php print $vienas?></h3>
+        </div>
     </body>
 </html>
