@@ -1,14 +1,15 @@
 <?php
-     $bin_vol = 40;
-     $bin_heap_vol = rand(1,100);
-     $trash_per_day = 15;
-     $visas = $bin_vol + $bin_heap_vol;
-     $days = floor($visas / $trash_per_day); 
+     $distance = rand(100,1000);
+     $consumption = 7.5;
+     $price = 1.3;
+     $fuel_total = round($distance * $consumption / 100, 2);
+     $price_trip = round($fuel_total * $price, 2);
      
-     $h1 = "Siuksliu prognoze";
-     $p_1 = "Turima siuksline $bin_vol litru";
-     $p_2 = "Zmona nieko nesako kol kaupas nevirsija $bin_heap_vol litru";
-     $h3 = "Isvada: Nieko nedarysiu $days dienas";
+     $h1 = "Keliones skaiciuokle";
+     $li_1 = "Nuvaziuota distancija: $distance";
+     $li_2 = "Sunaudota $fuel_total l. kuro";
+     $li_3 = "Kaina: $price_trip pinigu"
+             
 ?>
 <html>
     <head>
@@ -16,8 +17,10 @@
     </head>
     <body>
         <h1><?php print $h1?></h1>
-        <p><?php print $p_1?></p>
-        <p><?php print $p_2?></p>
-        <h3><?php print $h3?></h3>
+        <ul>
+            <li><?php print $li_1?></li>
+            <li><?php print $li_2?></li>
+            <li><?php print $li_3?></li>
+        </ul>
     </body>
 </html>
