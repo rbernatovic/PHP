@@ -1,22 +1,20 @@
 <?php
-     $paskola = (rand (1,100)); 
-     $neveluoju = (rand (101,200)); 
-     $veluoju = (rand (201,300)); 
-     $skola = "Skolos skaiciuokle:";
-     $jei_paemei = "Jei paemei $paskola";
-     $du = "Su dviem kabanciais grazinsi $neveluoju";
-     $vienas = "Su vienu kabanciu  grazinsi $veluoju";
+     $bin_vol = 40;
+     $bin_heap_vol = rand(1,100);
+     $trash_per_day = 15;
+     $visas = $bin_vol + $bin_heap_vol;
+     $days = floor($visas / $trash_per_day);
+     
+             
 ?>
 <html>
     <head>
-        <title>skolos skaiciuokle</title>
+        <title>siuksles</title>
     </head>
     <body>
-        <div>
-            <h1><?php print $skola?></h1>
-            <h3><?php print $jei_paemei?></h3>
-            <h3><?php print $du?></h3>
-            <h3><?php print $vienas?></h3>
-        </div>
+        <h1>Siuksliu prognoze</h1>
+        <p>Turima siuksline <?php print $bin_vol?> litru</p>
+        <p>Zmona nieko nesako kol kaupas nevirsija <?php print $bin_heap_vol?></p>
+        <h3>Isvada: Nieko nedarysiu <?php print $days?> dienu</h3>
     </body>
 </html>
