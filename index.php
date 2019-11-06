@@ -1,26 +1,24 @@
 <?php
-$months = 12;
-$wallet = 1000;
-$month_income = 700;
+$petrol_in_tank = rand(1, 50);
 
 
-for ($x = 1; $x <= $months; $x++) {
-    $month_expenses = rand(600, 3000);
-    if ($wallet > 0) {
-        $wallet = $wallet + $month_income - $month_expenses;
-    } else {
+$diesel_limit = ($petrol_in_tank + ($petrol_in_tank * 0.1)) * 0.1;
+for ($i = 0; $i < 100; $i++) {
+    if ($i > $diesel_limit) {
         break;
     }
 }
-$h1 = 'Wallet Forecast:';
-$h2 = "Atsargiai, $x menesi gali baigtis pinigai!";
+$h1 = 'Pripylei dyzelio i benz. masina?';
+$h2 = "Benzino buvo: $petrol_in_tank l";
+$h3 = "Max dyzelio riba: $i l";
 ?>
 <html>
     <head>
-        <title>Uzd3</title>
+        <title>Petrol</title>
     </head>
     <body>
         <h1><?php print $h1 ?></h1>
         <h2><?php print $h2 ?></h2>
+        <h3><?php print $h3 ?></h3>
     </body>
 </html>
