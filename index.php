@@ -1,47 +1,31 @@
 <?php
-$rezultatas = [
-    [
-        [
-            'poz1' => 1
-        ],
-        [
-            'poz1' => 0,
-            'poz2' => 1
-        ],
-        [
-            'poz1' => 0,
-            'poz2' => 0,
-            'poz3' => 1
-        ],
-        [
-            'poz1' => 1,
-            'poz2' => 0,
-            'poz3' => 0,
-            'poz4' => 1
-        ],
+$trasa = [
+    'posukis1' => [
+        'puse' => 'desine',
+        'kampas' => '70°'
     ],
-    [
-        [
-            'poz1' => 0
-        ],
-        [
-            'poz1' => 0,
-            'poz2' => 0
-        ],
-        [
-            'poz1' => 0,
-            'poz2' => 0,
-            'poz3' => 0
-        ],
-        [
-            'poz1' => 0,
-            'poz2' => 0,
-            'poz3' => 0,
-            'poz4' => 0
-        ],
+    'posukis2' => [
+        'puse' => 'kaire',
+        'kampas' => '15°'
+    ],
+    'posukis3' => [
+        'puse' => 'desine',
+        'kampas' => '100°'
+    ],
+    'posukis4' => [
+        'puse' => 'kaire',
+        'kampas' => '130°'
+    ],
+    'posukis5' => [
+        'puse' => 'desine',
+        'kampas' => '180°'
+    ],
+    'posukis' => [
+        'puse6' => 'desine',
+        'kampas' => '30°'
     ],
 ];
-var_dump($rezultatas)
+var_dump($trasa)
 ?>
 <html>
     <head>
