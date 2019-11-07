@@ -1,41 +1,47 @@
 <?php
-$maisto_prekes = [
+$rezultatas = [
     [
         [
-            'produktas' => 'kiausiniai',
-            'kiekis' => 2
+            'poz1' => 1
         ],
         [
-            'produktas' => 'grietine',
-            'kiekis' => 1
+            'poz1' => 0,
+            'poz2' => 1
         ],
         [
-            'produktas' => 'jogurtas',
-            'kiekis' => 3
+            'poz1' => 0,
+            'poz2' => 0,
+            'poz3' => 1
         ],
         [
-            'produktas' => 'zuvis',
+            'poz1' => 1,
+            'poz2' => 0,
+            'poz3' => 0,
+            'poz4' => 1
         ],
     ],
     [
         [
-            'produktas' => 'pienas',
-            'kiekis' => 1
+            'poz1' => 0
         ],
         [
-            'produktas' => 'kefyras',
+            'poz1' => 0,
+            'poz2' => 0
         ],
         [
-            'produktas' => 'degtine',
-            'kiekis' => 2
+            'poz1' => 0,
+            'poz2' => 0,
+            'poz3' => 0
         ],
         [
-            'produktas' => 'kecupas',
-            'kiekis' => 2
+            'poz1' => 0,
+            'poz2' => 0,
+            'poz3' => 0,
+            'poz4' => 0
         ],
     ],
 ];
-var_dump($maisto_prekes);
+var_dump($rezultatas)
 ?>
 <html>
     <head>
